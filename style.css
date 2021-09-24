@@ -158,16 +158,18 @@ main {
     padding: 0rem 2rem;
 }
 
+/* Daily overview start */
 
+.daily-heading {
+    align-self: flex-start;
+    margin-left: 12rem;
+    color: var(--lght-gray-txt);
+}
 .daily-container {
   display: grid;
   grid-template-columns: repeat(4, minmax(300px, 1fr));
   grid-gap: 2rem;
   margin-right: 0;
-}
-
-h2 {
-  display: inline;
 }
 
 .daily-container div {
@@ -176,6 +178,80 @@ h2 {
   min-height: 150px;
   background-color: var(--lght-card-bg);
   border-radius: 5px;
+  color: var(--lght-gray-txt);
+
+}
+
+.daily-container div p {
+    display: inline;
+}
+
+div.daily-content.fb h6 {
+    background: url(./images/icon-facebook.svg);
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: 80% 50%;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0rem 3rem 0rem;
+
+}
+
+div.daily-content.twit h6 {
+    background: url(./images/icon-twitter.svg);
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: 80% 50%;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0rem 3rem 0rem;
+
+}
+div.daily-content.insta h6 {
+    background: url(./images/icon-instagram.svg);
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: 80% 50%;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0rem 3rem 0rem;
+
+}
+div.daily-content.youtube h6 {
+    background: url(./images/icon-youtube.svg);
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: 80% 50%;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0rem 3rem 0rem;
+
+}
+
+p.daily-number {
+    color: var(--drk-blue-txt);
+    font-weight: 700;
+    font-size: 28px;
+    padding: 0.5rem 1rem;
+
+}
+
+p.daily-change {
+    color: var(--green);
+    font-weight: 700;
+    font-size: 12px;
+    background: url(./images/icon-up.svg);
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: 80% 50%;
+    
+}
+
+p.daily-change.neg {
+    color: var(--red);
+    font-weight: 700;
+    font-size: 12px;
+    background: url(./images/icon-down.svg);
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: 80% 50%;
+
 }
 
 .attribution {
